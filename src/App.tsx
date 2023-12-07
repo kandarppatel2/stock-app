@@ -54,6 +54,7 @@ function App() {
         onInputChange={(event, newInputValue) => {
           setTickerQuery(newInputValue);
         }}
+        filterOptions={(x) => x}
         options={tickerSuggestion}
         renderInput={(params) => (
           <TextField
